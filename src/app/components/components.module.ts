@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { FloatingImageComponent } from './floating-image/floating-image.component';
 import { SrcFormatPipe } from './floating-image/pipes/src-format.pipe';
 import { AboutComponent } from './about/about.component';
+import { SkillsComponent } from './skills/skills.component';
 
 @NgModule({
     declarations: [
@@ -14,7 +15,8 @@ import { AboutComponent } from './about/about.component';
         CardComponent,
         HomeComponent,
         FloatingImageComponent,
-        AboutComponent
+        AboutComponent,
+        SkillsComponent
     ],
     imports: [ 
         CommonModule,
@@ -26,7 +28,8 @@ import { AboutComponent } from './about/about.component';
         CardComponent,
         HomeComponent,
         FloatingImageComponent,
-        AboutComponent
+        AboutComponent,
+        SkillsComponent
     ]
 })
 export class ComponentsModule {}

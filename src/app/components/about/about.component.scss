@@ -1,5 +1,17 @@
 .about {
     clear: both;
-    width: 55%;
+    width: 100%;
     height: auto;
+
+    @media (min-width: 768px) {
+        width: 55%;
+    }
+}
+
+.card-item {
+    width: 100% !important;
+
+    @media (min-width: 768px) {
+        width: 45% !important;
+    }
 }

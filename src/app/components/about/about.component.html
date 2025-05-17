@@ -1,46 +1,77 @@
-
 <div class="about mx-auto rounded p-1" data-bs-theme="dark">
     <h1 class="text-dark d-flex flex-column align-items-center mb-5">About Me</h1>
     <ul class="nav nav-tabs justify-content-center bg-secondary-subtle" role="tablist">
         <li class="nav-item" role="presentation">
-            <a class="nav-link active text-success-emphasis" data-bs-toggle="tab" href="#me" aria-selected="true" role="tab">About me</a>
+            <a class="nav-link active text-success-emphasis" data-bs-toggle="tab" href="#me" aria-selected="true"
+                role="tab">About me</a>
         </li>
         <li class="nav-item" role="presentation">
-            <a class="nav-link text-success-emphasis" data-bs-toggle="tab" href="#profile" aria-selected="false" role="tab"
-                tabindex="-1">Profile</a>
+            <a class="nav-link text-success-emphasis" data-bs-toggle="tab" href="#backend" aria-selected="false"
+                role="tab" tabindex="-2">Back End</a>
         </li>
         <li class="nav-item" role="presentation">
-            <a class="nav-link text-success-emphasis" data-bs-toggle="tab" href="#backend" aria-selected="false" role="tab"
-                tabindex="-2">Back-end</a>
+            <a class="nav-link text-success-emphasis" data-bs-toggle="tab" href="#frontend" aria-selected="false"
+                role="tab" tabindex="-2">Front End</a>
         </li>
     </ul>
-    <div class="tab-content">
-        <div class="tab-pane fade active show" id="me" role="tabpanel">
-            <p class="h5">I'm someone who’s always curious and eager to grow. I enjoy spending 
-                time learning new things, whether it's a framework, a new technology, or a better way 
-                to solve a problem. Learning is part of my daily routine and something that drives 
-                me forward.
+    <div class="tab-content bg-light">
+        <div class="tab-pane fade active show text-black-50" id="me" role="tabpanel">
+            <p class="h5">
+                I'm someone who’s always <span class="text-warning">curious</span> and eager to
+                <span class="text-success">grow</span>. I enjoy learning new things every day — whether it's a
+                <span class="text-info">framework</span>, a <span class="text-primary">technology</span>, or a more
+                <span class="text-success">efficient solution</span> to a problem.
+                <span class="text-purple">Continuous learning</span> is part of my routine and a key factor that
+                <span class="text-danger">drives me forward</span>. I'm passionate about software development
             </p>
         </div>
-        <div class="tab-pane fade" id="profile" role="tabpanel">
+        <div class="tab-pane fade text-black-50" id="backend" role="tabpanel">
             <p class="h5">
-                I'm a proactive and adaptable developer with a strong drive to learn and 
-                improve continuously. I thrive in dynamic environments, quickly grasp 
-                new concepts, and consistently seek efficient solutions. I enjoy collaborating 
-                with others and take pride in contributing 
-                to clean, scalable, and meaningful software.
+                I'm a backend-focused developer who works with
+                <span class="text-warning">Java</span> and <span class="text-primary">Spring Boot</span>
+                to build scalable and efficient <span class="text-success">Microservices</span>. I work with tools like
+                <span class="text-info">Spring Cloud</span> and <span class="text-warning">RabbitMQ</span>.
+                In addition, I also have knowledge of <span class="text-purple">C#</span> and <span
+                    class="text-purple">ASP.NET</span> I’m always looking to expand my skill set, improve code
+                quality, and contribute to clean, maintainable solutions.
             </p>
         </div>
-        <div class="tab-pane fade" id="backend" role="tabpanel">
+        <div class="tab-pane fade text-black-50" id="frontend" role="tabpanel">
             <p class="h5">
-                I'm a backend-focused developer who primarily works with Java and Spring Boot 
-                to build scalable and efficient microservices. I work with tools like Spring Cloud and RabbitMQ. In addition, 
-                I also have knowledge of C# and ASP.NET. I’m always looking to expand my skill set, improve code quality, 
-                and contribute to clean, maintainable solutions.
+                I'm a frontend developer who works with
+                <span class="text-danger">Angular</span> to build dynamic and responsive
+                <span class="text-info">single-page applications</span>. I use component libraries like
+                <span class="text-danger-emphasis">Angular Material</span> to create modern and accessible user interfaces,
+                and rely on <span class="text-purple">Bootstrap</span> for responsive design and layout consistency.
+                In addition, I also started learning React.
             </p>
         </div>
     </div>
-    <div>
-        
+</div>
+<div class="container-fluid my-5">
+    <div class="d-flex w-100 flex-column flex-md-row g-0">
+        <div class="card card-item bg-white my-3 text-black mx-auto">
+            <div class="card-header">Academic Background</div>
+            <div class="card-body">
+                <h4 class="card-title">Software Engineering - UNC</h4>
+                <p class="card-text">
+                    Currently pursuing a degree in Software Engineering at <span class="text-purple">UNC</span>,
+                    focused on <span class="text-info-emphasis">software development</span>, systems architecture,
+                    and modern programming practices.
+                </p>
+            </div>
+        </div>
+        <div class="card card-item bg-white my-3 w-40 text-black mx-auto">
+            <div class="card-header">Academic Background</div>
+            <div class="card-body">
+                <h4 class="card-title">English - FISK</h4>
+                <p class="card-text">
+                    Completed an English course at <span class="text-danger">Fisk</span>,
+                    covering grammar, conversation, reading, and writing. I have a
+                    <span class="text-purple">strong command of English</span>
+                    and feel confident communicating both in professional and everyday contexts.
+                </p>
+            </div>
+        </div>
     </div>
 </div>
