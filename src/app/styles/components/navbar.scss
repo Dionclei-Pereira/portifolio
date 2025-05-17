@@ -1,5 +1,9 @@
 .po-c-navbar__scrolled {
     backdrop-filter: blur(1000px) !important;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1) !important;
-    opacity: 0.8 !important;
+    opacity: 0.6 !important;
+
+    &:hover {
+        opacity: 1 !important;
+    }
 }

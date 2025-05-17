@@ -1,11 +1,32 @@
+/* Certifique-se de que o body e html ocupem toda a altura */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.container-main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 .header {
-  position: fixed;
-  top: 0;
   width: 100%;
-  height: 80px;
-  z-index: 1000;
 }
 
 .content {
-  padding-top: 85px;
+  position: relative;
+  top: 55px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex: 1;
+
+  &__item {
+    width: 100%;
+    clear: both;
+    box-sizing: border-box;
+    padding: 16px;
+  }
 }

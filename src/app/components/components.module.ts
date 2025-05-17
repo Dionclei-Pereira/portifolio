@@ -6,13 +6,15 @@ import { ScrolledDirective } from './navbar/directives/navbar-scrolled.directive
 import { HomeComponent } from './home/home.component';
 import { FloatingImageComponent } from './floating-image/floating-image.component';
 import { SrcFormatPipe } from './floating-image/pipes/src-format.pipe';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
     declarations: [
         NavbarComponent,
         CardComponent,
         HomeComponent,
-        FloatingImageComponent
+        FloatingImageComponent,
+        AboutComponent
     ],
     imports: [ 
         CommonModule,
@@ -23,7 +25,8 @@ import { SrcFormatPipe } from './floating-image/pipes/src-format.pipe';
         NavbarComponent,
         CardComponent,
         HomeComponent,
-        FloatingImageComponent
+        FloatingImageComponent,
+        AboutComponent
     ]
 })
 export class ComponentsModule {}
