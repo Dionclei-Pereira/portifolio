@@ -8,6 +8,7 @@ import { FloatingImageComponent } from './floating-image/floating-image.componen
 import { SrcFormatPipe } from './floating-image/pipes/src-format.pipe';
 import { AboutComponent } from './about/about.component';
 import { SkillsComponent } from './skills/skills.component';
+import { scrollObservableDirective } from './navbar/directives/scroll-observable.directive';
 
 @NgModule({
     declarations: [
@@ -21,7 +22,8 @@ import { SkillsComponent } from './skills/skills.component';
     imports: [ 
         CommonModule,
         ScrolledDirective,
-        SrcFormatPipe
+        SrcFormatPipe,
+        scrollObservableDirective
     ],
     exports: [
         NavbarComponent,
