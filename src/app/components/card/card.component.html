@@ -1,5 +1,10 @@
-<div class="card">
-    <ng-content select="card-header"></ng-content>
-    <ng-content select="card-body"></ng-content>
-    <ng-content select="card-footer"></ng-content>
+<div class="card rounded-5 bg-dark">
+    <ng-content select="app-card-header"></ng-content>
+
+    <div class="po-c-card-body" appBlur [opacity]="opacity" (pointerenter)="onOver()" (pointerleave)="onOut()">
+        <img [src]="src" class="my-1">
+    </div>
+
+    <ng-content select="app-card-body"></ng-content>
+    <img #gitHub class="git rounded" src="assets/images/github.png" (pointerenter)="onOver()" (click)="onClick()">
 </div>

@@ -1,9 +1,8 @@
 <h1 class="text-success text-center mt-4">Hard Skills</h1>
 <div class="container m-5 d-flex overflow-x-auto justify-content-center">
-    <app-floating-image delay="4" src="assets/images/Java.png"></app-floating-image>
-    <app-floating-image delay="1" src="assets/images/Spring.png"></app-floating-image>
-    <app-floating-image delay="3" src="assets/images/Angular.png"></app-floating-image>
-    <app-floating-image delay="2" src="assets/images/C-Sharp.png"></app-floating-image>
+    <ng-container *ngFor="let img of images; let i = index">
+        <app-floating-image [delay]="i + ''" [src]="`assets/images/${img}.png`"></app-floating-image>
+    </ng-container>
 </div>
 <h1 class="text-success text-center my-5">Soft Skills</h1>      
 <div class="soft-skills mt-auto d-flex flex-wrap justify-content-center">

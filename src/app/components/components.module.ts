@@ -9,6 +9,11 @@ import { SrcFormatPipe } from './floating-image/pipes/src-format.pipe';
 import { AboutComponent } from './about/about.component';
 import { SkillsComponent } from './skills/skills.component';
 import { scrollObservableDirective } from './navbar/directives/scroll-observable.directive';
+import { ProjectsComponent } from './projects/projects.component';
+import { CardHeaderDirective } from './card/directives/base/card-header.directive';
+import { CardBodyDirective } from './card/directives/base/card-body.directive';
+import { CardTitleDirective } from './card/directives/content/card-title.directive';
+import { BlurDirective } from '../directives/blur.directive';
 
 @NgModule({
     declarations: [
@@ -17,13 +22,18 @@ import { scrollObservableDirective } from './navbar/directives/scroll-observable
         HomeComponent,
         FloatingImageComponent,
         AboutComponent,
-        SkillsComponent
+        SkillsComponent,
+        ProjectsComponent,
     ],
     imports: [ 
         CommonModule,
         ScrolledDirective,
         SrcFormatPipe,
-        scrollObservableDirective
+        scrollObservableDirective,
+        CardHeaderDirective,
+        CardBodyDirective,
+        CardTitleDirective,
+        BlurDirective
     ],
     exports: [
         NavbarComponent,
@@ -31,7 +41,8 @@ import { scrollObservableDirective } from './navbar/directives/scroll-observable
         HomeComponent,
         FloatingImageComponent,
         AboutComponent,
-        SkillsComponent
+        SkillsComponent,
+        ProjectsComponent
     ]
 })
 export class ComponentsModule {}

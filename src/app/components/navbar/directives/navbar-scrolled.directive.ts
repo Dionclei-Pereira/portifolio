@@ -14,7 +14,6 @@ export class ScrolledDirective {
 
     @HostListener('window:scroll')
     onScroll(): void {
-        console.log(this.el.nativeElement.classList)
         const offset = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop || 0;
         if (offset > 0) {
             this.el.nativeElement.classList.add(this.scrollClass);

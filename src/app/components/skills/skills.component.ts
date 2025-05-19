@@ -7,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrl: './skills.component.scss'
 })
 export class SkillsComponent {
-
+  images: string[] = [
+    'Java',
+    'Spring',
+    'Angular',
+    'C-Sharp'
+  ]
 }

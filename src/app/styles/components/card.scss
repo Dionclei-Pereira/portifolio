@@ -1,0 +1,42 @@
+.po-c-card-header {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+    height: 20%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px 5px 15px 15px;
+
+    border-radius: 20px;
+}
+
+.po-c-card-body {
+    width: 100%;
+    height: 80%;
+    background-color: black;
+
+    border-top: white 1px solid;
+
+    padding: 5px 0 5px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: white;
+    transition: all 0.3s ease-in-out;
+
+    p {
+        text-align: center;
+    }
+
+    img {
+        border-radius: 10px;
+        width: 200px;
+        height: 150px;
+    }
+
+    border-radius: 5px;
+}

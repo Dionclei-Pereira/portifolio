@@ -1,0 +1,16 @@
+<h1 class="text-success text-center my-5">Projects</h1>
+<div class="container h-auto w-100 mb-5">
+    <div class="projects container w-100 h-auto my-5 d-flex flex-wrap justify-content-center">
+        <ng-container *ngFor="let project of projects">
+            <app-card class="projects__item" [src]="`assets/images/${project.img}.png`" [link]="project.link">
+                <app-card-header>
+                    <app-card-title>{{ project.title }}</app-card-title>
+                    <img [src]="`assets/images/${project.icon}.png`">
+                </app-card-header>
+                <app-card-body>
+                    <p>{{ project.description }}</p>
+                </app-card-body>
+            </app-card>
+        </ng-container>
+    </div>
+</div>
