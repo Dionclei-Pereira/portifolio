@@ -1,0 +1,93 @@
+.game {
+    position: fixed;
+    top: 80px;
+    left: 10px;
+
+    height: 500px;
+
+    background-color: #1e1e1e;
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+
+    .game__header {
+        height: 40px;
+
+        background-color: #2d2d2d;
+        border-bottom: 1px solid black;
+
+        color: white;
+
+        .game__title {
+            font-size: 0.9rem;
+            padding-left: 8px;
+        }
+
+        button {
+            font-weight: bold;
+            width: 32px;
+            height: 32px;
+            padding: 0;
+            line-height: 1;
+        }
+    }
+
+    .game__content {
+        flex: 1;
+        background-color: black;
+        color: #f8f9fa;
+
+        &-play {
+
+
+            margin-top: 50%;
+
+            &-dino {
+                position: relative;
+                top: 15px;
+                width: 50px;
+            }
+
+            &-cactus {
+                position: relative;
+                top: 20px;
+                left: 80%;
+                width: 25px;
+
+                animation: cactus 1s linear infinite;
+                overflow: hidden;
+            }
+        }
+    }
+}
+
+.anim {
+    animation: jump 0.5s linear;
+}
+
+@keyframes jump {
+  0% {
+    top: 15px;
+    animation-timing-function: ease-out;
+  }
+
+  40% {
+    top: -50px;
+    animation-timing-function: ease-in;
+  }
+
+  100% {
+    top: 15px;
+  }
+}
+
+@keyframes cactus {
+    0% {
+        left: 90%;
+    }
+
+    100% {
+        left: -12%;
+    }
+}

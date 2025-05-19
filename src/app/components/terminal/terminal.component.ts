@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-terminal',
@@ -11,13 +11,16 @@ export class TerminalComponent {
   history: string[] = [];
   currentInput: string = '';
 
+  @Output()
+  gameEmmiter = new EventEmitter<void>();
+
   commands: Record<string, () => string> = {
     help: () => 'Available commands: help, about, skills, projects, play, clear',
     about: () => 'Hi! I am a full stack developer, my name is Dionclei',
     skills: () => 'C#, Java, Spring Boot, Angular, RabbitMQ, Hibernate...',
     projects: () => 'Available projects: github.com/Dionclei-Pereira',
     clear: () => { this.history = []; return ' '; },
-    play: () => '🎮 Starting game...',
+    play: () => { this.gameEmmiter.emit(); return '🎮 Starting game...' }
   };
 
   executeCommand() {

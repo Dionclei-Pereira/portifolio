@@ -7,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
+
   title = 'portfolio';
+
+  isPlaying: boolean = false;
+
+  togglePlaying() {
+    this.isPlaying = !this.isPlaying
+  }
 }

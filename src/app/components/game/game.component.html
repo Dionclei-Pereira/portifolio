@@ -1,0 +1,18 @@
+<div class="game w-100 w-md-50">
+  <div class="game__header d-flex justify-content-between align-items-center px-2">
+    <span class="game__title">Dino game!</span>
+    <div>
+      <button type="button" class="btn btn-secondary btn-sm me-1" (click)="onClose()">—</button>
+      <button type="button" class="btn btn-danger btn-sm" (click)="onClose()">✕</button>
+    </div>
+  </div>
+
+  <div class="game__content p-3" (click)="jump()">
+    <p class="text-light">Score: {{ score }}</p>
+    <div class="game__content-play">
+      <img #dino class="game__content-play-dino" [src]="`assets/images/dino-${anim}.png`">
+      <img *ngIf="isOpen" #cactus class="game__content-play-cactus" src='assets/images/cactus.png'>
+    </div>
+    <hr>
+  </div>
+</div>

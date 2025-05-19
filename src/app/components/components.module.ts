@@ -17,6 +17,7 @@ import { BlurDirective } from '../directives/blur.directive';
 import { BgColorDirective } from './card/directives/base/card-bg-color.directive';
 import { TerminalComponent } from './terminal/terminal.component';
 import { FormsModule } from '@angular/forms';
+import { GameComponent } from './game/game.component';
 
 @NgModule({
     declarations: [
@@ -27,7 +28,8 @@ import { FormsModule } from '@angular/forms';
         AboutComponent,
         SkillsComponent,
         ProjectsComponent,
-        TerminalComponent
+        TerminalComponent,
+        GameComponent
     ],
     imports: [ 
         CommonModule,
@@ -49,7 +51,8 @@ import { FormsModule } from '@angular/forms';
         AboutComponent,
         SkillsComponent,
         ProjectsComponent,
-        TerminalComponent
+        TerminalComponent,
+        GameComponent
     ]
 })
 export class ComponentsModule {}
