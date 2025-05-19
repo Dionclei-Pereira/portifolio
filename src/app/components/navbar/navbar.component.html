@@ -1,17 +1,35 @@
 <div>
-    <nav class="navbar navbar-expand-sm navbar-light bg-dark" appScroll scrollObservable>
-        <div class="container-fluid d-flex">
-            <div class="collapse navbar-collapse" id="navbarID">
-                <div class="navbar-nav">
-                    <a class="nav-link" aria-current="page" href="#home">Home</a>
-                    <a class="nav-link" aria-current="page" href="#about">About Me</a>
-                    <a class="nav-link" aria-current="page" href="#skills">Skills</a>
-                    <a class="nav-link" aria-current="page" href="#projects">Projects</a>
-                    <a class="nav-link" aria-current="page" href="#terminal">Terminal</a>
-                </div>
-            </div>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark" appScroll scrollObservable>
+        <div class="container-fluid d-flex justify-content-between align-items-center">
 
-            <a href="https://www.linkedin.com/in/dionclei-de-souza-pereira-07287726b/" class="align-self-end h2 link-secondary">Dionclei de Souza Pereira</a>
+            <a href="https://www.linkedin.com/in/dionclei-de-souza-pereira-07287726b/"
+                class="navbar-brand text-secondary d-none d-md-block">
+                Dionclei de Souza Pereira
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav text-center text-md-start">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#terminal">Terminal</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 </div>
