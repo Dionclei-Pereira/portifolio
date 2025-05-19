@@ -15,6 +15,8 @@ import { CardBodyDirective } from './card/directives/base/card-body.directive';
 import { CardTitleDirective } from './card/directives/content/card-title.directive';
 import { BlurDirective } from '../directives/blur.directive';
 import { BgColorDirective } from './card/directives/base/card-bg-color.directive';
+import { TerminalComponent } from './terminal/terminal.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
     declarations: [
@@ -25,9 +27,11 @@ import { BgColorDirective } from './card/directives/base/card-bg-color.directive
         AboutComponent,
         SkillsComponent,
         ProjectsComponent,
+        TerminalComponent
     ],
     imports: [ 
         CommonModule,
+        FormsModule,
         ScrolledDirective,
         SrcFormatPipe,
         scrollObservableDirective,
@@ -44,7 +48,8 @@ import { BgColorDirective } from './card/directives/base/card-bg-color.directive
         FloatingImageComponent,
         AboutComponent,
         SkillsComponent,
-        ProjectsComponent
+        ProjectsComponent,
+        TerminalComponent
     ]
 })
 export class ComponentsModule {}

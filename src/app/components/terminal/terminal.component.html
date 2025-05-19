@@ -1,0 +1,14 @@
+<h1 class="text-glow-success text-center my-5">Terminal</h1>
+<div class="terminal">
+  <div class="output">
+    <div *ngFor="let line of history">{{ line }}</div>
+  </div>
+  <div class="input-line">
+    <span>&gt;</span>
+    <input
+      [(ngModel)]="currentInput"
+      (keydown.enter)="executeCommand()"
+      autocomplete="off"
+    />
+  </div>
+</div>

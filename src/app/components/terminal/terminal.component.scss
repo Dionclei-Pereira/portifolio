@@ -1,0 +1,38 @@
+.terminal {
+    background-color: #0d0d0d;
+    color: #00ffae;
+
+    font-family: 'Courier New', monospace;
+
+    padding: 25px;
+    border-radius: 10px;
+
+    height: 400px;
+    width: 80%;
+
+    padding-top: 10px;
+
+    margin: auto;
+
+    overflow-y: auto;
+    box-shadow: 0 0 15px rgba(0, 255, 174, 0.4);
+}
+
+.input-line {
+    display: flex;
+    align-items: center;
+
+    span {
+        margin-right: 10px;
+    }
+
+    input {
+        background: none;
+        border: none;
+
+        color: #00ffae;
+        outline: none;
+        
+        width: 100%;
+    }
+}
