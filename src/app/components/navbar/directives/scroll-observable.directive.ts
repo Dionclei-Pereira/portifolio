@@ -20,11 +20,11 @@ export class scrollObservableDirective implements AfterViewInit {
                 const navLink = this.el.nativeElement.querySelector(`a[href="#${id}"]`);
 
                 if (entry.isIntersecting) {
-                    this.navLinks.forEach(link => this.renderer.removeClass(link, 'text-primary'));
+                    this.navLinks.forEach(link => this.renderer.removeClass(link, 'text-success'));
                     this.navLinks.forEach(link => this.renderer.addClass(link, "text-secondary"));
                     if (navLink) {
                         this.renderer.removeClass(navLink, "text-secondary");
-                        this.renderer.addClass(navLink, 'text-primary');
+                        this.renderer.addClass(navLink, 'text-success');
                     }
                 }
             });
