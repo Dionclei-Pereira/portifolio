@@ -1,4 +1,4 @@
-<div class="card rounded bg-dark">
+<div class="card rounded" appbgColor [color]="color">
     <ng-content select="app-card-header"></ng-content>
 
     <div class="po-c-card-body" appBlur [opacity]="opacity" (pointerenter)="onOver()" (pointerleave)="onOut()">

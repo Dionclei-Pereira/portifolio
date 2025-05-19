@@ -15,6 +15,9 @@ export class CardComponent implements AfterViewInit {
   src: string | undefined;
 
   @Input()
+  color: string = '';
+
+  @Input()
   link: string = '';
 
   opacity: string = '0';

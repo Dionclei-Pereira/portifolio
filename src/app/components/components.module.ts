@@ -14,6 +14,7 @@ import { CardHeaderDirective } from './card/directives/base/card-header.directiv
 import { CardBodyDirective } from './card/directives/base/card-body.directive';
 import { CardTitleDirective } from './card/directives/content/card-title.directive';
 import { BlurDirective } from '../directives/blur.directive';
+import { BgColorDirective } from './card/directives/base/card-bg-color.directive';
 
 @NgModule({
     declarations: [
@@ -33,7 +34,8 @@ import { BlurDirective } from '../directives/blur.directive';
         CardHeaderDirective,
         CardBodyDirective,
         CardTitleDirective,
-        BlurDirective
+        BlurDirective,
+        BgColorDirective
     ],
     exports: [
         NavbarComponent,
