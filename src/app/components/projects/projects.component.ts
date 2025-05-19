@@ -21,17 +21,17 @@ export class ProjectsComponent {
       description: 'A complete chess system with additional game modes.',
       link: 'https://github.com/Dionclei-Pereira/Console-Chess'
     }, {
-      icon: 'Angular',
-      img: 'portifolio',
-      title: 'Portifolio',
-      description: 'This application is made with Angular, using directives, pipes, components and TypeScript.',
-      link: 'https://github.com/Dionclei-Pereira/portifolio'
-    }, {
       icon: 'Spring',
       img: 'game-list',
       title: 'Game List',
       description: 'An application manages a list of games to a review website, features included: Cache Caffeine, JWT HMAC and Hibernate.',
       link: 'https://github.com/Dionclei-Pereira/dslist'
+    }, {
+      icon: 'Angular',
+      img: 'portifolio',
+      title: 'Portifolio',
+      description: 'This application is made with Angular, using directives, pipes, components and TypeScript.',
+      link: 'https://github.com/Dionclei-Pereira/portifolio'
     }, {
       icon: 'Angular',
       img: 'process',
