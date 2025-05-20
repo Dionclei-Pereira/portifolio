@@ -18,6 +18,8 @@ import { BgColorDirective } from './card/directives/base/card-bg-color.directive
 import { TerminalComponent } from './terminal/terminal.component';
 import { FormsModule } from '@angular/forms';
 import { GameComponent } from './game/game.component';
+import { ContactComponent } from './contact/contact.component';
+import { ImgFloatDirective } from '../directives/floating-img.directive';
 
 @NgModule({
     declarations: [
@@ -29,7 +31,8 @@ import { GameComponent } from './game/game.component';
         SkillsComponent,
         ProjectsComponent,
         TerminalComponent,
-        GameComponent
+        GameComponent,
+        ContactComponent
     ],
     imports: [ 
         CommonModule,
@@ -41,7 +44,8 @@ import { GameComponent } from './game/game.component';
         CardBodyDirective,
         CardTitleDirective,
         BlurDirective,
-        BgColorDirective
+        BgColorDirective,
+        ImgFloatDirective
     ],
     exports: [
         NavbarComponent,
@@ -52,7 +56,8 @@ import { GameComponent } from './game/game.component';
         SkillsComponent,
         ProjectsComponent,
         TerminalComponent,
-        GameComponent
+        GameComponent,
+        ContactComponent
     ]
 })
 export class ComponentsModule {}

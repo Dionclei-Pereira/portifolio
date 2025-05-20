@@ -1,0 +1,55 @@
+.contact {
+    width: 40%;
+    height: auto;
+
+    gap: 15px;
+}
+
+.container-galactic {
+    width: 70%;
+    height: auto;
+}
+
+.galactic {
+
+    background-color: #323232;
+    background-image:
+        radial-gradient(white 1px, transparent 0),
+        radial-gradient(white 1px, transparent 0),
+        radial-gradient(white 1px, transparent 0),
+        radial-gradient(white 1px, transparent 0);
+    background-size: 100px 100px, 150px 150px, 200px 200px, 250px 250px;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    width: 350px;
+    height: 300px;
+
+    margin: 15px;
+    transition: all 0.5s ease;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+    &__icon {
+        padding-top: 5px;
+        font-size: 4rem;
+        margin-bottom: 0.5rem;
+
+        &:hover {
+            font-size: 5rem;
+        }
+    }
+
+    &__info {
+
+
+        h2 {
+            position: relative;
+            top: 10px;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+<h1 class="text-glow-success text-center">Contact</h1>
+
+<!-- <div class="container-fluid mx-auto d-flex justify-content-center my-5">
+    <img class="img-thumbnail w-25" src="assets/images/me.png">
+</div> -->
+
+<div class="container-galactic flex-wrap d-flex justify-content-center mx-auto my-5">
+    <div (click)="onClick(contact.link)" class="galactic text-center flex-column d-flex align-items-center justify-content-start" *ngFor="let contact of contacts; let i = index">
+        <div class="mt-3" [class]="`galactic__icon float-delay-${i}`" appImgFloat >{{ contact.icon }}</div>
+        <div class="galactic__info">
+            <h2 class="text-glow-success">{{ contact.name }}</h2>
+            <p class="text-glow-light mt-5">{{ contact.description }}</p>
+        </div>
+    </div>
+</div>
+
+<hr class="border border-light border-1 mt-5">
+
+<h6 class="text-glow-light text-center">© 2025 Dionclei de Souza Pereira</h6>
