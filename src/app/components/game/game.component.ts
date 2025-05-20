@@ -19,7 +19,7 @@ export class GameComponent implements AfterViewInit, OnDestroy {
 
   score: number = 0;
   anim: number = 1;
-  isOpen: boolean = true;
+  isOpen: boolean = false;
 
   constructor(private readonly _renderer: Renderer2) { }
 
@@ -54,7 +54,12 @@ export class GameComponent implements AfterViewInit, OnDestroy {
   }
 
   jump() {
-    if (!this.isOpen) return;
+    if (!this.isOpen) {
+      this.score = 0;
+      this.isOpen = true;
+      this.loop();
+      return;
+    };
     
     let dino = this.dino.nativeElement;
     if (!dino.classList.contains('anim')) {
@@ -76,7 +81,6 @@ export class GameComponent implements AfterViewInit, OnDestroy {
       dinoRect.bottom > cactusRect.top;
 
     if (isCollision) {
-      this._renderer.setStyle(this.cactus.nativeElement, 'backgroundColor', 'red');
       this.isOpen = false;
     }
   }
