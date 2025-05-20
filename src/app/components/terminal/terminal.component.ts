@@ -25,7 +25,7 @@ export class TerminalComponent {
 
   executeCommand() {
 
-    const input = this.currentInput.trim();
+    const input = this.currentInput.trim().toLowerCase();
     this.history.push(`> ${input}`);
 
     const result = this.commands[input]?.() || `Command not recognized: ${input}`;

@@ -26,7 +26,7 @@ export class ShowDirective implements OnInit {
                 }
             })
         }, {
-            threshold: 0.35
+            threshold: 0.2
         })
 
         observer.observe(this.el.nativeElement);
