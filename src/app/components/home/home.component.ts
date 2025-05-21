@@ -11,6 +11,6 @@ export class HomeComponent {
   randomOffsets: number[] = [];
 
   constructor() {
-    this.randomOffsets = this.numbers.map(() => Math.floor(Math.random() * 80));
+    this.randomOffsets = this.numbers.map(() => Math.floor(Math.random() * 99));
   }
 }

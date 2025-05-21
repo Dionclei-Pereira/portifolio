@@ -29,7 +29,7 @@ export class scrollObservableDirective implements AfterViewInit {
                 }
             });
         }, {
-            threshold: 0.4
+            threshold: 0.3
         });
 
         this.sections.forEach(section => observer.observe(section));
