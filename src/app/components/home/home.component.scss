@@ -19,4 +19,22 @@
             width: 250px;
         }
     }
+
+    .flow {
+        animation: flow 2s ease-out forwards infinite;
+        opacity: 0;
+    }
+
+}
+
+@keyframes flow {
+    0% {
+        top: 100%;
+        opacity: 1;
+    }
+
+    100% {
+        top: 0;
+        opacity: 1;
+    }
 }

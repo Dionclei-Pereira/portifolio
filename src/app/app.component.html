@@ -1,39 +1,43 @@
 <div class="container-main">
-    <div class="header mb-3">
-        <app-navbar></app-navbar>
+  <div class="header mb-3">
+    <app-navbar></app-navbar>
+  </div>
+
+  <section id="home">
+    <div class="content__item">
+      <app-home></app-home>
     </div>
-    <div>
-        <div class="content__item">
-            <section id="home">
-                <app-home></app-home>
-            </section>
-        </div>
-        <div class="content__item bg-success" appShow>
-            <section id="about">
-                <app-about></app-about>
-            </section>
-        </div>
-        <div class="content__item" appShow>
-            <section id="skills">
-                <app-skills></app-skills>
-            </section>
-        </div>
-        <div class="content__item" appShow>
-            <section id="projects">
-                <app-projects></app-projects>
-            </section>
-        </div>
-        <div class="content__item" appShow>
-            <section id="terminal">
-                <app-terminal (gameEmmiter)="togglePlaying()"></app-terminal>
-            </section>
-        </div>
-        <div class="content__item mt-5" appShow>
-            <section id="contact">
-                <app-contact></app-contact>
-            </section>
-        </div>
+  </section>
+
+  <section id="about" appShow>
+    <div class="content__item">
+      <app-about></app-about>
     </div>
+  </section>
+
+  <section id="skills" appShow>
+    <div class="content__item">
+      <app-skills></app-skills>
+    </div>
+  </section>
+
+  <section id="projects" appShow>
+    <div class="content__item">
+      <app-projects></app-projects>
+    </div>
+  </section>
+
+  <section id="terminal" appShow>
+    <div class="content__item">
+      <app-terminal (gameEmmiter)="togglePlaying()"></app-terminal>
+    </div>
+  </section>
+
+  <section id="contact" class="mt-5" appShow>
+    <div class="content__item">
+      <app-contact></app-contact>
+    </div>
+  </section>
 </div>
 
 <ng-container *ngIf="isPlaying">

@@ -10,7 +10,7 @@ html, body {
   box-sizing: border-box;
 }
 
-section, .content__item {
+.content__item {
   max-width: 100%;
   overflow-x: hidden;
 }
@@ -26,6 +26,9 @@ section, .content__item {
 }
 
 section {
+
+  transition: opacity 0.8s ease, transform 1.2s ease, filter 1s ease;
+
   scroll-margin-top: 80px;
 }
 
@@ -42,7 +45,5 @@ section {
     clear: both;
     box-sizing: border-box;
     padding: 16px;
-
-    transition: opacity 0.5s ease, transform 1s ease, filter 1s ease;
   }
 }

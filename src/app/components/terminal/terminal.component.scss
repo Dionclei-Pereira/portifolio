@@ -1,6 +1,6 @@
 .terminal {
     background-color: #0d0d0d;
-    color: #00ffae;
+    color: mediumpurple;
 
     font-family: 'Courier New', monospace;
 
@@ -15,7 +15,7 @@
     margin: auto;
 
     overflow-y: auto;
-    box-shadow: 0 0 15px rgba(0, 255, 174, 0.4);
+    box-shadow: 0 0 15px mediumpurple;
 }
 
 .input-line {
@@ -30,7 +30,7 @@
         background: none;
         border: none;
 
-        color: #00ffae;
+        color: rgb(161, 129, 226);
         outline: none;
 
         width: 100%;

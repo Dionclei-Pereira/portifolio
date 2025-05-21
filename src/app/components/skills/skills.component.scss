@@ -1,6 +1,16 @@
 .soft-skills {
     clear: both;
     height: auto;
+    gap: 15px;
 
     width: 100%;
+
+    .toast {
+
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            transform: scale(1.03);
+        }
+    }
 }

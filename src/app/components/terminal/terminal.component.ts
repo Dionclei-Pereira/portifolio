@@ -9,7 +9,7 @@ import { Component, EventEmitter, Output } from '@angular/core';
 export class TerminalComponent {
 
   history: string[] = [];
-  currentInput: string = '';
+  currentInput: string = 'help';
 
   @Output()
   gameEmmiter = new EventEmitter<void>();

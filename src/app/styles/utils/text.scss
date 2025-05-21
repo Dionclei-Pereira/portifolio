@@ -1,5 +1,15 @@
 .text-purple {
+    color: mediumpurple !important;
+}
+
+.text-glow-purple {
     color: mediumpurple;
+    text-shadow: 0 0 10px mediumpurple, 0 0 20px mediumpurple;
+}
+
+.text-glow-light {
+    color: #E9ECEF;
+    text-shadow: 0 0 10px #E9ECEF, 0 0 20px #E9ECEF;
 }
 
 .text-glow-dark {
@@ -10,6 +20,11 @@
 .text-glow-success {
     color: #68D391;
     text-shadow: 0 0 10px #68D391, 0 0 20px #68D391;
+}
+
+.text-glow-info {
+    color: #22D2ED;
+    text-shadow: 0 0 20px #22D2ED;
 }
 
 .text-glow-light {
