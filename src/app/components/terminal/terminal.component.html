@@ -1,11 +1,11 @@
-<h1 class="text-glow-purple text-center my-5">Terminal</h1>
-<div class="terminal">
+<h1 class="text-glow-purple text-center my-5">TERMINAL</h1>
+<div class="terminal" (click)="input.focus()">
   <div class="output">
-    <div *ngFor="let line of history">{{ line }}</div>
+    <div class="h5" *ngFor="let line of history">{{ line }}</div>
   </div>
   <div class="input-line">
-    <span>&gt;</span>
-    <input
+    <span class="h5">&gt;</span>
+    <input #input class="h5"
       [(ngModel)]="currentInput"
       (keydown.enter)="executeCommand()"
     />

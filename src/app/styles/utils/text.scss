@@ -1,10 +1,10 @@
 .text-purple {
-    color: mediumpurple !important;
+    color: #9d00ff !important;
 }
 
 .text-glow-purple {
-    color: mediumpurple;
-    text-shadow: 0 0 10px mediumpurple, 0 0 20px mediumpurple;
+    color: #9d00ff;
+    text-shadow: 0 0 5px #9d00ff, 0 0 1px #9d00ff;
 }
 
 .text-glow-light {
@@ -30,4 +30,57 @@
 .text-glow-light {
     color: white;
     text-shadow: 0 0 10px white, 0 0 20px white;
+}
+
+.text-fill {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: transparent;
+  position: relative;
+  -webkit-text-stroke: 1px white;
+  text-transform: uppercase;
+  background: linear-gradient(to right, #9d00ff 70%, transparent 30%);
+  background-size: 200%;
+  background-position: 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: coolText 5s ease forwards;
+}
+
+.text-infinite {
+    text-align: center;
+    font-size: 45px;
+    font-weight: bold;
+    color: transparent;
+
+    -webkit-text-stroke: 1px white;
+    text-transform: uppercase;
+
+    background: linear-gradient(to right,
+            #9d00ff 20%,
+            black 40%,
+            #9d00ff 60%);
+
+    background-size: 200% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: moveGradient 4s linear infinite;
+}
+
+@keyframes coolText {
+  to {
+    background-position: 0;
+    -webkit-text-stroke: 1px mediumpurple;
+    color: #9d00ff;
+  }
+}
+
+@keyframes moveGradient {
+    0% {
+        background-position: 200% 0;
+    }
+
+    100% {
+        background-position: -200% 0;
+    }
 }

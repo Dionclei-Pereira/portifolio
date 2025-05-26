@@ -1,6 +1,53 @@
-<h1 class="text-glow-light text-center my-5">Projects</h1>
+<h1 class="text-glow-light text-center my-5">PROJECTS</h1>
 <div class="container h-auto w-100 mb-5">
-    <div class="projects container w-100 h-auto my-5 d-flex flex-wrap justify-content-center">
+    <div class="display rounded rounded-5 w-100 p-3 flex-column-reverse flex-md-row">
+        <div class="display__left-div w-md-50 w-100 h-100">
+            <div>
+                <div class="title d-flex align-items-center">
+                    <h2 [class.fade-out]="isFading">{{ index + 1 | number : '2.0-0'}}</h2>
+                    <div [class.fade-out]="isFading">
+                        <h3 [class]="`text-${project.color}`">{{ project.title }}</h3>
+                    </div>
+                </div>
+                <div class="content">
+                    <p class="text-light p-2 h5" [class.fade-out]="isFading">
+                        {{project.description}}
+                    </p>
+                    <div class="d-flex w-100 h-100 ps-md-5">
+                        <img 
+                            *ngFor="let icon of project.icons; let i = index"
+                            class="position-relative"
+                            appImgFloat
+                            [class.fade-out]="isFading"
+                            [class]="`float-delay-${i}`"
+                            [src]="`assets/images/${project.icons[i]}.png`"
+                        >
+                    </div>
+                </div>
+                <div class="footer px-4 mx-auto">
+                    <img [class.fade-out]="isFading" class="git rounded rounded-3" (click)="open(project.link)" src="assets/images/github.png">
+                </div>
+            </div>
+        </div>
+        <div class="right-div w-100 w-md-50 h-md-100">
+            <div class="top-container w-100 h-75 p-0 p-md-0">
+                <img [class.fade-out]="isFading" class="d-block mx-auto" [src]="`assets/images/${project.img}.png`">
+            </div>
+            <div class="w-100 h-25 mt-3 d-flex justify-content-center" data-bs-theme="dark">
+                <ul class="pagination pagination-lg">
+                    <li class="page-item me-3">
+                        <button [class]="`page-link text-${project.color}`" (click)="prev()">&laquo;</button>
+                    </li>
+                    <li class="page-item">
+                        <button [class]="`page-link text-${project.color}`" (click)="next()">&raquo;</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <div class="projects container w-100 h-auto my-5 d-flex flex-wrap justify-content-center">
         <ng-container *ngFor="let project of projects">
             <app-card class="projects__item" 
                 [src]="`assets/images/${project.img}.png`" 
@@ -16,5 +63,4 @@
                 </app-card-body>
             </app-card>
         </ng-container>
-    </div>
-</div>
+    </div> -->
