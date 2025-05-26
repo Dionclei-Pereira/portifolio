@@ -13,7 +13,7 @@
                     <p class="text-light p-2 h5" [class.fade-out]="isFading">
                         {{project.description}}
                     </p>
-                    <div class="d-flex w-100 h-100 ps-md-5">
+                    <div class="d-flex w-100 h-100 justify-content-center gap-5">
                         <img 
                             *ngFor="let icon of project.icons; let i = index"
                             class="position-relative"
