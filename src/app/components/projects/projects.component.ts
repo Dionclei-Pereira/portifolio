@@ -18,7 +18,7 @@ export class ProjectsComponent {
       color: 'primary'
     },
     {
-      icons: ['Angular', 'TypeScript', 'Bootstrap'],
+      icons: ['Angular', 'TypeScript', 'Sass'],
       img: 'portifolio',
       title: 'Portfolio',
       description: 'A personal portfolio website built with Angular, showcasing components, directives, pipes, TypeScript features, and responsive design principles.',
@@ -34,7 +34,7 @@ export class ProjectsComponent {
       color: 'purple'
     },
     {
-      icons: ['Angular', 'TypeScript', 'Sass'],
+      icons: ['Angular', 'TypeScript', 'Bootstrap'],
       img: 'process',
       title: 'ProcessSIM',
       description: 'A real-time CPU scheduling simulator built with Angular that visualizes process queue management and various CPU scheduling algorithms including Round-Robin and Priority Scheduling.',
