@@ -1,4 +1,4 @@
-<div class="floating">
-    <img [class]="'img float-delay-' + delay" appImgFloat [src]="src">
+<div class="floating" appImgFloat [class]="'float-delay-' + delay">
+    <img class="img" [src]="src" [alt]="src | srcFormat">
     <h2 class="text-light text-center">{{ src | srcFormat }}</h2>
 </div>

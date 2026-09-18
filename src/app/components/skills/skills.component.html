@@ -1,7 +1,7 @@
 <h1 class="text-glow-purple text-center mt-4">HARD SKILLS</h1>
-<div class="container m-5 d-flex overflow-x-auto justify-content-center pb-5">
+<div class="container skills-grid d-flex flex-wrap justify-content-center pb-5">
     <ng-container *ngFor="let img of images; let i = index">
-        <app-floating-image [delay]="i + ''" [src]="`assets/images/${img}.png`"></app-floating-image>
+        <app-floating-image [delay]="i + ''" [src]="srcFor(img)"></app-floating-image>
     </ng-container>
 </div>
 <h1 class="text-glow-purple text-center my-5">SOFT SKILLS</h1>      

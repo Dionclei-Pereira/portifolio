@@ -6,13 +6,16 @@
 }
 
 .container-galactic {
+    width: 100%;
+    max-width: 1100px;
+    height: auto;
+    margin-inline: auto;
+    padding-inline: 1rem;
+    gap: 1rem;
 
     @media (min-width: 768px) {
-        width: 70%;
+        width: 100%;
     }
-
-    width: 100%;
-    height: auto;
 }
 
 .galactic {
@@ -29,17 +32,23 @@
 
     cursor: pointer;
 
+    width: 100%;
+    max-width: 350px;
+    min-height: 260px;
+    height: auto;
+    padding: 1rem;
 
-    @media (min-width: 768px) {
-        width: 350px;
-        height: 300px;
+    margin: 0;
+    transition: transform 0.4s ease-in-out, border 0.4s ease-in-out;
+
+    @media (min-width: 576px) {
+        width: calc(50% - 0.5rem);
     }
 
-    width: 40%;
-    height: 300px;
-
-    margin: 15px;
-    transition: all 0.4s ease-in-out;
+    @media (min-width: 992px) {
+        width: calc(25% - 0.75rem);
+        min-height: 300px;
+    }
 
     &:hover {
         transform: scale(1.03);
@@ -48,12 +57,8 @@
 
     &__icon {
         padding-top: 5px;
-        font-size: 4rem;
+        font-size: 3.25rem;
         margin-bottom: 0.5rem;
-
-        &:hover {
-            font-size: 5rem;
-        }
     }
 
     &__info {
@@ -61,7 +66,12 @@
         h2 {
             position: relative;
             top: 10px;
+            font-size: clamp(1.1rem, 2.6vw, 1.5rem);
+            word-break: break-word;
         }
-        
+
+        p {
+            font-size: 0.95rem;
+        }
     }
 }

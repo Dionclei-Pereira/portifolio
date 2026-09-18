@@ -11,6 +11,17 @@ export class SkillsComponent {
     'Java',
     'Spring',
     'Angular',
-    'C-Sharp'
+    'TypeScript',
+    'Bootstrap',
+    'RabbitMQ',
+    'PHP.svg',
+    'Laravel.svg',
+    'AWS.svg'
   ]
+
+  srcFor(img: string): string {
+    return img.endsWith('.svg')
+      ? `assets/images/${img}`
+      : `assets/images/${img}.png`;
+  }
 }

@@ -1,24 +1,37 @@
 html, body {
   margin: 0;
   padding: 0;
-  height: 100%;
-  overflow-x: hidden;
+  min-height: 100%;
+  overflow-x: clip;
   width: 100%;
+  max-width: 100vw;
 }
 
 *, *::before, *::after {
   box-sizing: border-box;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+  font-size: clamp(1.75rem, 5vw, 2.5rem);
+  overflow-wrap: break-word;
+}
+
 .content__item {
   max-width: 100%;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 .container-main {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  overflow-x: clip;
+  padding-top: 72px;
 }
 
 .header {
@@ -44,6 +57,16 @@ section {
     width: 100%;
     clear: both;
     box-sizing: border-box;
-    padding: 16px;
+    padding: 1rem;
+    max-width: 1200px;
+    margin-inline: auto;
+
+    @media (min-width: 768px) {
+      padding: 1rem 1.5rem;
+    }
   }
+}
+
+.text-infinite {
+  font-size: clamp(1.5rem, 6vw, 45px) !important;
 }

@@ -17,7 +17,7 @@ export class TerminalComponent {
   commands: Record<string, () => string> = {
     help: () => 'Available commands: help, about, skills, projects, play, clear',
     about: () => 'Hi! I am a full stack developer, my name is Dionclei',
-    skills: () => 'C#, Java, Spring Boot, Angular, RabbitMQ, Hibernate...',
+    skills: () => 'Java, Spring Boot, PHP, Laravel, Angular, RabbitMQ, Hibernate...',
     projects: () => 'Available projects: github.com/Dionclei-Pereira',
     clear: () => { this.history = []; return ' '; },
     play: () => { this.gameEmmiter.emit(); return '🎮 Starting game...' }

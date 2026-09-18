@@ -1,35 +1,32 @@
 .text-purple {
-    color: #9d00ff !important;
+    color: #c07dff !important;
 }
 
+// Glow suavizado para legibilidade: sombra sutil em vez de neon forte.
+// Classes mantidas para não quebrar o HTML existente.
 .text-glow-purple {
-    color: #9d00ff;
-    text-shadow: 0 0 5px #9d00ff, 0 0 1px #9d00ff;
+    color: #c07dff;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 }
 
 .text-glow-light {
     color: #E9ECEF;
-    text-shadow: 0 0 10px #E9ECEF, 0 0 20px #E9ECEF;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 }
 
 .text-glow-dark {
     color: #212529;
-    text-shadow: 0 0 10px #212529, 0 0 20px #212529;
+    text-shadow: none;
 }
 
 .text-glow-success {
     color: #68D391;
-    text-shadow: 0 0 10px #68D391, 0 0 20px #68D391;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 }
 
 .text-glow-info {
     color: #22D2ED;
-    text-shadow: 0 0 20px #22D2ED;
-}
-
-.text-glow-light {
-    color: white;
-    text-shadow: 0 0 10px white, 0 0 20px white;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 }
 
 .text-fill {
